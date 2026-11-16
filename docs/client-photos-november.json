@@ -1,0 +1,92 @@
+[
+  {
+    "key": "team-queenstown",
+    "src": "/images/projects/team-queenstown.jpg",
+    "width": 1200,
+    "height": 1200
+  },
+  {
+    "key": "ceiling-spray-in-progress",
+    "src": "/images/projects/ceiling-spray-in-progress.jpg",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "key": "interior-spray-in-progress",
+    "src": "/images/projects/interior-spray-in-progress.jpg",
+    "width": 480,
+    "height": 852
+  },
+  {
+    "key": "exterior-garage-finish",
+    "src": "/images/projects/exterior-garage-finish.jpg",
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "key": "hallway-renovation-in-progress",
+    "src": "/images/projects/hallway-renovation-in-progress.jpg",
+    "width": 1440,
+    "height": 1920
+  },
+  {
+    "key": "painted-doors-drying",
+    "src": "/images/projects/painted-doors-drying.jpg",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "key": "driveway-detail",
+    "src": "/images/projects/driveway-detail.jpg",
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "key": "neutral-wall-finish",
+    "src": "/images/projects/neutral-wall-finish.jpg",
+    "width": 828,
+    "height": 1472
+  },
+  {
+    "key": "interior-alcove-finish",
+    "src": "/images/projects/interior-alcove-finish.jpg",
+    "width": 828,
+    "height": 1472
+  },
+  {
+    "key": "exterior-masking-preparation",
+    "src": "/images/projects/exterior-masking-preparation.jpg",
+    "width": 1440,
+    "height": 1440
+  },
+  {
+    "key": "interior-trim-finish",
+    "src": "/images/projects/interior-trim-finish.jpg",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "key": "window-trim-detail",
+    "src": "/images/projects/window-trim-detail.jpg",
+    "width": 828,
+    "height": 1472
+  },
+  {
+    "key": "green-feature-wall",
+    "src": "/images/projects/green-feature-wall.jpg",
+    "width": 1440,
+    "height": 1440
+  },
+  {
+    "key": "gib-preparation",
+    "src": "/images/projects/gib-preparation.jpg",
+    "width": 768,
+    "height": 768
+  },
+  {
+    "key": "colour-effection-family",
+    "src": "/images/projects/colour-effection-family.jpg",
+    "width": 1440,
+    "height": 1440
+  }
+]
