@@ -26,3 +26,7 @@ Quando houver provedor/backend, implementar POST /api/quote no servidor, usando 
 
 Cada página tem title e descrição próprios, canonical, OG, Twitter, en-NZ e um H1. Schema HousePainter usa somente dados fornecidos, sem ratings. Não existe og:image enquanto não houver asset real. A homepage usa localização em eyebrow e texto introdutório. Sitemap contém 12 páginas.
 
+
+## Vercel
+
+The root vercel.json sets Framework Preset to Other, builds with node scripts/build.mjs and serves dist. Import the repository with Root Directory left at the repository root. Do not set public as the output directory: it contains assets, while generated HTML is in dist. Git pushes trigger deployment when the repository integration is enabled.
