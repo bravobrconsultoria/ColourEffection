@@ -121,3 +121,5 @@
 
 /* Keep all three team members visible in the supplied square portrait. */
 .photo--about:has(img[src="/images/projects/team-queenstown.jpg"]){aspect-ratio:1;max-height:none}
+
+.menu-toggle .menu-icon{display:inline-block;vertical-align:middle;margin-left:8px;flex-shrink:0}
