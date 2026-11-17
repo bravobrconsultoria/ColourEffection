@@ -21,3 +21,6 @@ Celular atualizado para colour-effection-mobile-76fad575.mp4, fornecido pelo cli
 
 
 16/11/2026: Client supplied actual exterior painting result. Asset exterior-completed.jpg replaces provisional exterior service photo and appears in the home portfolio and Exterior Painting filter. CSS framing hides the black bars without modifying the original photo. No location, client name or coating specification inferred.
+
+
+17/11/2026: Added Plastering & GIB Stopping, with its own service page, shared cards, footer links and quote option. Uses supplied GIB preparation and interior trim photos. Scope limited to interior plastering, GIB stopping and drywall preparation/repairs; no structural concrete or exterior rendering claims added.
