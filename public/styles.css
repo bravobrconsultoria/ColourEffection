@@ -123,3 +123,7 @@
 .photo--about:has(img[src="/images/projects/team-queenstown.jpg"]){aspect-ratio:1;max-height:none}
 
 .menu-toggle .menu-icon{display:inline-block;vertical-align:middle;margin-left:8px;flex-shrink:0}
+
+/* Small client photos stay at a restrained size and retain their portrait framing. */
+.ceiling-comparison{max-width:820px}.ceiling-comparison .photo--comparison{aspect-ratio:3/4}
+.photo--service:has(img[src="/images/projects/wallpaper-hallway.png"]){aspect-ratio:3/4;max-width:382px;margin-inline:auto}

@@ -1,0 +1,62 @@
+[
+  {
+    "key": "bright-hallway",
+    "src": "/images/projects/bright-hallway.png",
+    "width": 287,
+    "height": 510
+  },
+  {
+    "key": "garage-interior",
+    "src": "/images/projects/garage-interior.png",
+    "width": 382,
+    "height": 510
+  },
+  {
+    "key": "vaulted-ceiling",
+    "src": "/images/projects/vaulted-ceiling.png",
+    "width": 382,
+    "height": 510
+  },
+  {
+    "key": "ceiling-before",
+    "src": "/images/projects/ceiling-before.png",
+    "width": 382,
+    "height": 510
+  },
+  {
+    "key": "ceiling-after",
+    "src": "/images/projects/ceiling-after.png",
+    "width": 382,
+    "height": 510
+  },
+  {
+    "key": "branded-vehicle",
+    "src": "/images/projects/branded-vehicle.png",
+    "width": 382,
+    "height": 510
+  },
+  {
+    "key": "wallpaper-hallway",
+    "src": "/images/projects/wallpaper-hallway.png",
+    "width": 382,
+    "height": 510
+  },
+  {
+    "key": "cladding-detail",
+    "src": "/images/projects/cladding-detail.png",
+    "width": 382,
+    "height": 510
+  },
+  {
+    "key": "exterior-side-wall",
+    "src": "/images/projects/exterior-side-wall.png",
+    "width": 382,
+    "height": 510
+  },
+  {
+    "key": "garage-exterior",
+    "src": "/images/projects/garage-exterior.png",
+    "width": 382,
+    "height": 510
+  }
+]

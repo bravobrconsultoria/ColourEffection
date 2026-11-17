@@ -13,6 +13,8 @@ export const services = [
  {slug:'plastering-gib-stopping',name:'Plastering & GIB Stopping',short:'Smooth, well-prepared walls and ceilings, ready for painting.',intro:'A smooth start to a better finish.',body:'Prepare your walls and ceilings for their next finish with plastering, GIB stopping and drywall repairs. We work on interior surfaces in homes, commercial spaces, new builds and renovations across Queenstown and Central Otago. Share photographs of the areas involved so we can discuss the preparation and finish required.',details:['Interior plastering and surface preparation','GIB stopping for plasterboard joints and fixing points','Drywall repairs before painting'],question:'Tell us which walls or ceilings need attention, their current condition and whether the work is part of a new build, renovation or repair.'},
  {slug:'commercial-painting',name:'Commercial Painting',short:'Well-presented spaces for your business and its people.',intro:'Make the right first impression.',body:'A considered paint finish is part of how your business presents itself. We offer commercial painting and welcome enquiries about your premises, access requirements and preferred project timeframe.',details:['Commercial interior painting','Commercial exterior painting','New and existing commercial properties'],question:'Let us know how your premises are used, the surfaces involved and any access or operating-hour considerations.'},
  {slug:'new-builds-renovations',name:'New Builds & Renovations',short:'Bring the finishing stages of your project together.',intro:'The finishing touch to a new chapter.',body:'Planning a new build or renovating an existing property? Talk to us about painting at the right stage of your project, including the areas to be finished and any preparation requirements.',details:['New build painting','Painting for renovations','GIB stopping and drywall repairs'],question:'Share your project stage, plans if available, and the painting or preparation work you need.'},
+ {"slug":"wallpaper-installation","name":"Wallpaper Installation","short":"Pattern, texture and character for your walls.","intro":"Make a feature of your walls.","body":"Bring pattern and personality to your space with wallpaper installation in Queenstown and Central Otago. From a feature wall to a hallway, tell us about your chosen wallpaper and the surfaces involved so we can discuss preparation and installation.","details":["Wallpaper installation","Feature walls and hallways","Wall preparation before installation"],"question":"Share your wallpaper choice, wall dimensions and photographs of the existing surface."},
+ {"slug":"interior-ceiling-painting","name":"Interior Ceiling Painting","short":"A fresh finish for flat, sloping and vaulted ceilings.","intro":"A fresh perspective overhead.","body":"Refresh your interior with ceiling painting for homes and commercial spaces across Queenstown and Central Otago. We discuss the condition of your ceiling, any preparation required and access to the area before planning the work.","details":["Interior ceiling painting and repainting","Sloping and vaulted ceilings","Surface preparation and patch repairs before painting"],"question":"Send photographs of the ceiling, its approximate height and any areas that need preparation. Let us know whether the room will be occupied."},
  {slug:'decorating-finishes',name:'Decorating & Specialist Finishes',short:'Wallpaper, decorative finishes and spray painting.',intro:'Details that make a space your own.',body:'Explore a different finish for your space with decorative painting, wallpaper installation or spray painting. Tell us what you have in mind so we can discuss suitability for the surface and your project.',details:['Decorative painting and finishes','Wallpaper installation','Spray painting'],question:'Describe your preferred finish or wallpaper, the surface and the approximate area. Specific techniques and material suitability are confirmed when we discuss your project.'}
 ];
 // Use local /images/... paths only, plus meaningful alt text and intrinsic dimensions.
@@ -180,12 +182,79 @@ export const clientPhotos = {
     "alt": "Two adults and a child wearing Colour Effection branded clothing outdoors"
   }
 };
-export const images = {hero:photos[0],about:clientPhotos['team-queenstown'],team:clientPhotos['team-queenstown'],services:{'plastering-gib-stopping':photos[6],'interior-painting':finishedResult,'exterior-painting':exteriorResult,'residential-painting':photos[7],'commercial-painting':commercialFeature.after,'new-builds-renovations':clientPhotos['interior-trim-finish'],'decorating-finishes':clientPhotos['green-feature-wall']}};
+export const latestPhotos = {
+  "bright-hallway": {
+    "src": "/images/projects/bright-hallway.png",
+    "width": 287,
+    "height": 510,
+    "alt": "Bright painted hallway with a sloping ceiling"
+  },
+  "garage-interior": {
+    "src": "/images/projects/garage-interior.png",
+    "width": 382,
+    "height": 510,
+    "alt": "Open garage with painted walls and stored materials"
+  },
+  "vaulted-ceiling": {
+    "src": "/images/projects/vaulted-ceiling.png",
+    "width": 382,
+    "height": 510,
+    "alt": "Painted vaulted timber ceiling in a living space"
+  },
+  "ceiling-before": {
+    "src": "/images/projects/ceiling-before.png",
+    "width": 382,
+    "height": 510,
+    "alt": "Sloping bathroom ceiling with patched areas before painting"
+  },
+  "ceiling-after": {
+    "src": "/images/projects/ceiling-after.png",
+    "width": 382,
+    "height": 510,
+    "alt": "The bathroom ceiling after painting, with a clean white finish"
+  },
+  "branded-vehicle": {
+    "src": "/images/projects/branded-vehicle.png",
+    "width": 382,
+    "height": 510,
+    "alt": "Colour Effection branding on the company vehicle"
+  },
+  "wallpaper-hallway": {
+    "src": "/images/projects/wallpaper-hallway.png",
+    "width": 382,
+    "height": 510,
+    "alt": "Patterned wallpaper along a hallway leading to stairs"
+  },
+  "cladding-detail": {
+    "src": "/images/projects/cladding-detail.png",
+    "width": 382,
+    "height": 510,
+    "alt": "Close view of dark exterior cladding and trim"
+  },
+  "exterior-side-wall": {
+    "src": "/images/projects/exterior-side-wall.png",
+    "width": 382,
+    "height": 510,
+    "alt": "Light exterior wall with dark trim"
+  },
+  "garage-exterior": {
+    "src": "/images/projects/garage-exterior.png",
+    "width": 382,
+    "height": 510,
+    "alt": "Finished dark garage door and surrounding exterior walls"
+  }
+};
+export const images = {hero:photos[0],about:clientPhotos['team-queenstown'],team:clientPhotos['team-queenstown'],services:{'wallpaper-installation':latestPhotos['wallpaper-hallway'],'interior-ceiling-painting':latestPhotos['vaulted-ceiling'],'plastering-gib-stopping':photos[6],'interior-painting':finishedResult,'exterior-painting':exteriorResult,'residential-painting':photos[7],'commercial-painting':commercialFeature.after,'new-builds-renovations':clientPhotos['interior-trim-finish'],'decorating-finishes':clientPhotos['green-feature-wall']}};
 // Add only owner-approved, real projects: {id,title,category,location,image:{src,alt,width,height}}.
 export const projects = [
  {id:'featured-commercial',title:'Commercial painting — completed finish',category:'Commercial Projects',image:commercialFeature.after},
  {id:'interior-finish',title:'Completed interior — actual result',category:'Interior Painting',image:finishedResult},
  {id:'exterior-finish',title:'Exterior painting — completed finish',category:'Exterior Painting',image:exteriorResult},
+ {id:'wallpaper-hallway',title:'Patterned hallway wallpaper',category:'Interior Painting',image:latestPhotos['wallpaper-hallway']},
+ {id:'vaulted-ceiling',title:'Vaulted interior ceiling',category:'Interior Painting',image:latestPhotos['vaulted-ceiling']},
+ {id:'bright-hallway',title:'Light-filled hallway finish',category:'Interior Painting',image:latestPhotos['bright-hallway']},
+ {id:'cladding-detail',title:'Exterior cladding detail',category:'Exterior Painting',image:latestPhotos['cladding-detail']},
+ {id:'garage-exterior',title:'Garage exterior finish',category:'Exterior Painting',image:latestPhotos['garage-exterior']},
  {id:'bedroom-finish',title:'Bedroom finish',category:'Residential Projects',image:photos[7]},
  {id:'green-feature-wall',title:'Bedroom feature wall',category:'Residential Projects',image:clientPhotos['green-feature-wall']},
  {id:'exterior-masking-preparation',title:'Exterior preparation — windows protected',category:'Exterior Painting',image:clientPhotos['exterior-masking-preparation']},
