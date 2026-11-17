@@ -244,7 +244,7 @@ export const latestPhotos = {
     "alt": "Finished dark garage door and surrounding exterior walls"
   }
 };
-export const images = {hero:photos[0],about:clientPhotos['team-queenstown'],team:clientPhotos['team-queenstown'],services:{'wallpaper-installation':latestPhotos['wallpaper-hallway'],'interior-ceiling-painting':latestPhotos['vaulted-ceiling'],'plastering-gib-stopping':photos[6],'interior-painting':finishedResult,'exterior-painting':exteriorResult,'residential-painting':photos[7],'commercial-painting':commercialFeature.after,'new-builds-renovations':clientPhotos['interior-trim-finish'],'decorating-finishes':clientPhotos['green-feature-wall']}};
+export const images = {hero:photos[0],about:clientPhotos['team-queenstown'],team:clientPhotos['team-queenstown'],services:{'wallpaper-installation':latestPhotos['wallpaper-hallway'],'interior-ceiling-painting':latestPhotos['vaulted-ceiling'],'plastering-gib-stopping':{src:'/images/projects/plaster-preparation.png',alt:'Plasterboard walls with joints and fixing points filled before painting',width:768,height:768},'interior-painting':finishedResult,'exterior-painting':exteriorResult,'residential-painting':photos[7],'commercial-painting':commercialFeature.after,'new-builds-renovations':clientPhotos['interior-trim-finish'],'decorating-finishes':clientPhotos['green-feature-wall']}};
 // Add only owner-approved, real projects: {id,title,category,location,image:{src,alt,width,height}}.
 export const projects = [
  {id:'featured-commercial',title:'Commercial painting — completed finish',category:'Commercial Projects',image:commercialFeature.after},
