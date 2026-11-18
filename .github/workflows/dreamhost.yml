@@ -1,0 +1,45 @@
+name: Publish to DreamHost
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: dreamhost-production
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build and test
+        run: |
+          node scripts/build.mjs
+          npm run lint
+          node --test tests/*.test.mjs
+      - name: Configure SSH
+        env:
+          SSH_KEY: ${{ secrets.DREAMHOST_SSH_KEY }}
+          KNOWN_HOSTS: ${{ secrets.DREAMHOST_KNOWN_HOSTS }}
+        run: |
+          test -n "$SSH_KEY" || { echo 'Missing DREAMHOST_SSH_KEY'; exit 1; }
+          test -n "$KNOWN_HOSTS" || { echo 'Missing DREAMHOST_KNOWN_HOSTS'; exit 1; }
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$SSH_KEY" | tr -d '\r' > ~/.ssh/dreamhost
+          printf '%s\n' "$KNOWN_HOSTS" | tr -d '\r' > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/dreamhost ~/.ssh/known_hosts
+      - name: Back up current site and upload
+        run: |
+          SSH_OPTIONS='-i /home/runner/.ssh/dreamhost -p 22 -o BatchMode=yes -o StrictHostKeyChecking=yes'
+          ssh $SSH_OPTIONS dh_f6ctky@vps46513.dreamhostps.com 'set -eu; test -d /home/dh_f6ctky/coloureffectionpainting.co.nz; mkdir -p /home/dh_f6ctky/.site-backups; tar -czf /home/dh_f6ctky/.site-backups/colour-$(date +%Y%m%d-%H%M%S).tar.gz -C /home/dh_f6ctky/coloureffectionpainting.co.nz .'
+          rsync -az --delay-updates -e "ssh $SSH_OPTIONS" dist/ dh_f6ctky@vps46513.dreamhostps.com:/home/dh_f6ctky/coloureffectionpainting.co.nz/
+      - name: Remove runner key
+        if: always()
+        run: rm -f ~/.ssh/dreamhost
