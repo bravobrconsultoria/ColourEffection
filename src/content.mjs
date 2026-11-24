@@ -1,6 +1,6 @@
 export const business = {
  name: 'Colour Effection Painting & Decoration', shortName: 'Colour Effection',
- url: 'https://www.cepdecoration.com', phone: '+64 22 150 8486', tel: '+64221508486',
+ url: 'https://coloureffectionpainting.co.nz', phone: '+64 22 150 8486', tel: '+64221508486',
  email: 'leonardo@cepdecoration.com', street: '24A Douglas Street', locality: 'Frankton, Queenstown', postcode: '9300',
  hours: 'Monday–Friday, 8:00 am–7:00 pm', instagram: 'https://www.instagram.com/coloureffection/', google: 'https://share.google/mFpQ2ZH1T7CoUxoqG',
  areas: ['Queenstown', 'Frankton', 'Arrowtown', 'Wānaka', 'Cromwell', 'Alexandra', 'Central Otago']
